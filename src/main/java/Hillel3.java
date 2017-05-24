@@ -5,9 +5,7 @@ import java.util.StringTokenizer;
 class Printer{
 
     private void printRow(int rows){
-
-
-        String text = "##########################################";
+        String text = "#################################################################";
         int positionStart = 3;
         int i = 0;
         for (i = positionStart; i < rows + positionStart; i++){
@@ -17,10 +15,10 @@ class Printer{
 
     public void printTower(){
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Pleace enter row number");
+        System.out.println("Please enter row number");
         int floors = scanner.nextInt();
         while (floors <= 0 || floors > 1000 ){
-            System.out.println("Pleace enter correct number of the rows");
+            System.out.println("Please enter correct number of the rows");
             floors = scanner.nextInt();
         }
         System.out.println("Got correct number");
@@ -32,9 +30,9 @@ class Printer{
 public class Hillel3 {
 
     public static void main(String[] args) {
-        //stairCase();
-        Printer printer = new Printer();
-        printer.printTower();
+//        Printer printer = new Printer();
+//        printer.printTower();
+        stairCase();
     }
 
     public static void stairCase() {
@@ -61,5 +59,4 @@ public class Hillel3 {
                 System.out.println();
         }
     }
-
 }
